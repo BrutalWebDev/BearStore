@@ -1,0 +1,17 @@
+User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: *
+Disallow: /image/
+Disallow: /css/
+Disallow: /js/
+
+Host: bearspb.ru
+Sitemap: https://bearspb.ru/sitemap.xml.gz
+Sitemap: https://bearspb.ru/sitemap.xml
+
+User-agent: Googlebot-Image
+Disallow: /image/ 
+
+User-agent: YandexImages
+Disallow: /image/
