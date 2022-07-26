@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b9649dc-cfc0-4a71-99c8-b64c5f278c0a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1Xcg8EyFSTWUKY8GEw60aAJ2xCP" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b9649dc-cfc0-4a71-99c8-b64c5f278c0a" name="Default Changelist" comment="" />
+      <created>1581350637499</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581350637499</updated>
+      <workItem from="1581350647445" duration="232000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="337" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1581859056710">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="337" y="171" key="com.intellij.ide.util.TipDialog/0.0.1280.690@0.0.1280.690" timestamp="1581859056710" />
+  </component>
+</project>

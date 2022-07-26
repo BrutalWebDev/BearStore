@@ -1,7 +1,7 @@
 
 <?php
 $name = $_POST['name'];
-$phone = $_POST['phone'];
+$phone = $_POST['phone1'];
 
 
 
@@ -22,7 +22,7 @@ $name = trim($name);
 $phone = trim($phone);
 
 
-if (mail("bearcompanyspb@yandex.ru", "Заявка с сайта", "Имя: ".$name.". Телефон: ".$phone,"From: shop@bearspb.ru \r\n")){
+if (mail("izbetpro@yandex.ru", "Заявка с сайта", "Имя: ".$name.". Телефон: ".$phone,"From: all@minecraft-store.ru\r\n")){
 
   echo <<<HTML
   <head>

@@ -78,7 +78,7 @@
 <!-- End Facebook Pixel Code -->
 </head>
 
-  <body> 
+  <body onload="document.getElementById('jb2').hidden = true;document.getElementById('jb3').hidden = true;document.getElementById('jb4').hidden = true;document.getElementById('jb5').hidden = true;document.getElementById('jb6').hidden = true;"> 
 
     <header>
     
@@ -553,6 +553,145 @@
 </div>
 </div>
 
+<script type="text/javascript">
+        
+            function ne () {
+              document.getElementById('jb1').hidden = true;
+              document.getElementById('jb2').hidden = false;
+            }
+            function ne1 () {
+              document.getElementById('jb2').hidden = true;
+              document.getElementById('jb3').hidden = false;
+            }
+            function ne2 () {
+              document.getElementById('jb3').hidden = true;
+              document.getElementById('jb4').hidden = false;
+            }
+            function ne3 () {
+              document.getElementById('jb4').hidden = true;
+              document.getElementById('jb5').hidden = false;
+            }
+
+
+            function pr () {
+                  document.getElementById('jb1').hidden = false;
+                  document.getElementById('jb2').hidden = true;
+            }
+            function pr1 () {
+                  document.getElementById('jb2').hidden = false;
+                  document.getElementById('jb3').hidden = true;
+            }
+            function pr2 () {
+                  document.getElementById('jb3').hidden = false;
+                  document.getElementById('jb4').hidden = true;
+            }
+            function pr3 () {
+                  document.getElementById('jb4').hidden = false;
+                  document.getElementById('jb5').hidden = true;
+            }
+
+
+
+
+</script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <form action="" method="post" name="zakaz" id="mailform">
+
+           <div class="jumbotron" id="jb1">
+              <div class="text-center">
+                   <label style="font-weight: 700; color:#000; padding-bottom: 20px;">Оформление заявки шаг 1</label>
+              </div>
+
+            <label for="inputColor" style="margin-bottom: 10px;">Цвет мишки</label>
+       
+            <select id="inputColor" name="color" class="form-control">
+               <option>Красный</option> 
+               <option>Синий</option>
+               <option>Черный</option>
+            </select>
+            
+            <input type="button" value="Далее" onclick="ne()" style="margin-top: 10px;" id="nextOne" class="btn btn-primary"></input>
+          
+              
+           </div>
+
+           <div class="jumbotron" id="jb2">
+              <div class="text-center">
+                   <label style="font-weight: 700; color:#000; padding-bottom: 20px;">Оформление заявки шаг 2</label>
+              </div>
+
+            <label for="inputSize" style="margin-bottom: 10px;">Размер мишки</label>
+            <select id="inputSize" name="size" class="form-control">
+               <option>20</option> 
+               <option>40</option>
+            </select>
+          
+            <input type="button" value="Назад" onclick="pr()" style="margin-right: 5px;margin-top: 10px;" id="prevOne" class="btn btn-primary"></input>
+            <input type="button" value="Далее" onclick="ne1()" style="margin-top: 10px;" id="nextTwo" class="btn btn-primary"></input>
+           </div>
+
+           <div class="jumbotron" id="jb3">
+              <div class="text-center">
+                   <label style="font-weight: 700; color:#000; padding-bottom: 20px;">Оформление заявки шаг 3</label>
+              </div>
+
+            <label for="inputDecor" style="margin-bottom: 10px;">Декорация</label>
+            <select id="inputDecor" name="decor" class="form-control">
+               <option>Бантик</option> 
+               <option>Сердечко</option>
+               <option>Без декорации</option>
+            </select>
+            
+             <input type="button" value="Назад" onclick="pr1()" style="margin-right: 5px;margin-top: 10px;" id="prevTwo" class="btn btn-primary"></input>
+             <input type="button" value="Далее" onclick="ne2()" style="margin-top: 10px;" id="nextThree" class="btn btn-primary"></input>
+              
+           </div>
+
+           <div class="jumbotron" id="jb4">
+              <div class="text-center">
+                   <label style="font-weight: 700; color:#000; padding-bottom: 20px;">Оформление заявки шаг 4</label>
+              </div>
+
+            <label for="inputBag" style="margin-bottom: 10px;">Упаковка</label>
+            <select id="inputBag" name="bag" class="form-control">
+               <option>Да</option> 
+               <option>Нет</option>
+            </select>
+            
+             <input type="button" value="Назад" onclick="pr2()" style="margin-right: 5px;margin-top: 10px;" id="prevTwo" class="btn btn-primary"></input>
+             <input type="button" value="Далее" onclick="ne3()" style="margin-top: 10px;" id="nextThree" class="btn btn-primary"></input>
+              
+           </div>
+
+           <div class="jumbotron" id="jb5">
+              <div class="text-center">
+                   <label style="font-weight: 700; color:#000; padding-bottom: 20px;">Оформление заявки шаг 5</label>
+              </div>
+
+            <label for="tel" style="margin-bottom: 10px;">Введите Ваш телефон</label>
+            <input type="tel" required="required" onkeyup="valid()" name="phone" id="phone" class="form-control bfh-phone" data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})" />
+
+             <input type="button" value="Назад" onclick="pr3()" style="margin-right: 5px;margin-top: 10px;" id="prevTwo" class="btn btn-primary"/>
+             <input value="Заказать" disabled="disabled" type="button" id="sendMail" style="background-color:#DA4967; border-color: #DA4967;  margin-top: 10px;"  class="btn btn-primary"/>
+              
+           </div>
+            <div class="jumbotron" id="jb6">
+              <div class="text-center">
+                   <label style="font-weight: 700; color:#000; padding-bottom: 20px;">Спасибо!<br>Ваш заказ в обработке.</label>
+              </div>
+           </div>
+         </form>
+       </div>
+   
+   <div class="col-md-4"></div>
+  </div>
+
+</div>
+
 <div class="container d-none d-sm-none d-md-none d-lg-flex d-xl-flex" id="lid">
   <div class="row">
     <div class="col-md-4">
@@ -598,7 +737,7 @@
           <input type="text" name="name" class="form-control" id="inputName" placeholder="Введите имя">
         </div>
         <div class="form-group">
-          <input type="text" name="phone" class="form-control" id="inputPhone" placeholder="Введите Ваш телефон">
+          <input type="text" name="phone1" class="form-control" id="inputPhone1" placeholder="Введите Ваш телефон">
         </div>
         <button class="btn btn-primary btn-block btn-lg" type="submit">
           <span class="submit">ЗАКАЗАТЬ</span>
@@ -616,7 +755,8 @@
 <script  src="js/index.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-
+<script src="js/bootstrap-formhelpers-phone.js"></script>
+<script src="js/sendMail.js"></script>
 <script>
   $(document).ready(function(){
     $(".slider").slick({
